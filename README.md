@@ -19,7 +19,18 @@ Requires Node `^22.19.0 || >=24` and DSH `>=0.2.0-rc.2 <0.3.0`.
 3. You get a compact, read-only report; use `/task-console --json` for machine-readable output.
 
 ```text
-[task-console] report — see --json for full data
+[task-console] 10 step(s) · 1 error(s) · ~2440 tokens · last=request/context
+  [MODEL] request/header
+  [MODEL] request/context
+  [TOOL] tool/start
+  [TOOL] tool/end
+  [TOOL] tool/call
+  [TOOL] tool/result
+  [ERROR] error
+  [TOOL] tool/result
+  [INFO] assistant/message
+  [MODEL] request/context
+Controls: pause, inject, retry-current, terminate
 ```
 
 ## What it reads
